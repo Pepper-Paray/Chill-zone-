@@ -17,10 +17,102 @@
 </head>
 
 <body>
+    <main>
+        <div
+            class="relative grid min-h-screen grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-white [--pattern-fg:var(--color-gray-950)]/5 dark:bg-gray-950 dark:[--pattern-fg:var(--color-white)]/10">
+            <div class="col-start-3 row-start-3 flex max-w-lg flex-col bg-gray-100 p-2 dark:bg-white/10">
+                <div class="rounded-xl bg-white p-10 text-sm/7 text-gray-700 dark:bg-gray-950 dark:text-gray-300">
+                    <img src="/img/logo.svg" class="mb-11.5 h-6 dark:hidden" alt="Chillzone" />
+                    <img src="/img/logo-dark.svg" class="mb-11.5 h-6 not-dark:hidden" alt="Chillzone" />
+                    <div class="space-y-6">
+                        <p>An advanced online playground for Tailwind CSS, including support for things like:</p>
+                        <ul class="space-y-3">
+                            <li class="flex">
+                                <svg class="h-[1lh] w-5.5 shrink-0" viewBox="0 0 22 22" fill="none"
+                                    stroke-linecap="square">
+                                    <circle cx="11" cy="11" r="11" class="fill-sky-400/25" />
+                                    <circle cx="11" cy="11" r="10.5" class="stroke-sky-400/25" />
+                                    <path d="M8 11.5L10.5 14L14 8" class="stroke-sky-800 dark:stroke-sky-300" />
+                                </svg>
+                                <p class="ml-3">
+                                    Customizing your mental wellnes
+                                    <code
+                                        class="font-mono font-medium text-gray-950 dark:text-white">by chating with people</code>
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <svg class="h-[1lh] w-5.5 shrink-0" viewBox="0 0 22 22" fill="none"
+                                    stroke-linecap="square">
+                                    <circle cx="11" cy="11" r="11" class="fill-sky-400/25" />
+                                    <circle cx="11" cy="11" r="10.5" class="stroke-sky-400/25" />
+                                    <path d="M8 11.5L10.5 14L14 8" class="stroke-sky-800 dark:stroke-sky-300" />
+                                </svg>
+                                <p class="ml-3">
+                                    Take hold of your furture with real people who may be your family tomorrow
+                                    <code
+                                        class="font-mono font-medium text-gray-950 dark:text-white">everyone should have access to help !</code>
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <svg class="h-[1lh] w-5.5 shrink-0" viewBox="0 0 22 22" fill="none"
+                                    stroke-linecap="square">
+                                    <circle cx="11" cy="11" r="11" class="fill-sky-400/25" />
+                                    <circle cx="11" cy="11" r="10.5" class="stroke-sky-400/25" />
+                                    <path d="M8 11.5L10.5 14L14 8" class="stroke-sky-800 dark:stroke-sky-300" />
+                                </svg>
+                                <p class="ml-3">
+                                    Relax with friends you make over chat
+                                    <code
+                                        class="font-mono font-medium text-gray-950 dark:text-white">No bullying or trolling!</code>
+                                </p>
+                            </li>
+                            <li class="flex">
+                                <svg class="h-[1lh] w-5.5 shrink-0" viewBox="0 0 22 22" fill="none"
+                                    stroke-linecap="square">
+                                    <circle cx="11" cy="11" r="11" class="fill-sky-400/25" />
+                                    <circle cx="11" cy="11" r="10.5" class="stroke-sky-400/25" />
+                                    <path d="M8 11.5L10.5 14L14 8" class="stroke-sky-800 dark:stroke-sky-300" />
+                                </svg>
+                                <p class="ml-3">make the most with your time!</p>
+                            </li>
+                        </ul>
+                        <p>Hello Everyone!Welcome to the Chill Zone !Please Enjoy the chat feature but remember to be
+                            kind.</p>
+                        <div class="chat-popup" id="myForm">
+                            <form action="/action_page.php" class="form-container">
+                                <h1>Chat</h1>
 
+                                <label for="msg"><b>Message</b></label>
+                                <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                                <button type="submit" class="btn">Send</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                        </div>
+                        <br>
+                    </div>
+                    <hr class="my-6 w-full border-(--pattern-fg)" />
+                    <p class="mb-3">Who Will You Meet?</p>
+                    <p class="font-semibold">
+                        <a href="https://www.kaggle.com/code/jocelyndumlao/chatbot-for-mental-health-conversations"
+                            class="text-gray-950 underline decoration-sky-400 underline-offset-3 hover:decoration-2 dark:text-white">Read
+                            talk to this therapist bot!</a>
+                    </p>
+                </div>
+            </div>
+            <div
+                class="relative -right-px col-start-2 row-span-full row-start-1 border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed">
+            </div>
+            <div
+                class="relative -left-px col-start-4 row-span-full row-start-1 border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed">
+            </div>
+            <div class="relative -bottom-px col-span-full col-start-1 row-start-2 h-px bg-(--pattern-fg)"></div>
+            <div class="relative -top-px col-span-full col-start-1 row-start-4 h-px bg-(--pattern-fg)"></div>
+        </div>
+    </main>
 </body>
 <footer></footer>
 <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="script" href="script.js">
+<link rel="script" href="script.js">
 
 </html>
