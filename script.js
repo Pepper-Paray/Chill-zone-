@@ -19,14 +19,5 @@ import {
   UserIcon,
 } from '@heroicons/react/16/solid'
     
-<form id="chatForm">
-    <input type="text" id="message" placeholder="Type your message"></input>
-    <button type="submit">Send</button>
-</form>
 
-    document.getElementById('chatForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-        const message = document.getElementById('message').value;
-        console.log('Message sent:', message); 
-    });
 
