@@ -1,88 +1,11 @@
-
-     {
-  "@context"; "https://schema.org",
-  "@graph"; [
-    {
-      "@type": ["Person", "Organization"],
-      "@id": "https://freewebapi.com/#person",
-      "name": "FreeWebApi",
-      "logo": {
-        "@type": "ImageObject",
-        "@id": "https://freewebapi.com/#logo",
-        "url": "https://freewebapi.com/wp-content/uploads/2024/06/fwa2.png",
-        "contentUrl": "https://freewebapi.com/wp-content/uploads/2024/06/fwa2.png",
-        "caption": "FreeWebApi",
-        "inLanguage": "en-GB"
-      },
-      "image": {
-        "@type": "ImageObject",
-        "@id": "https://freewebapi.com/#logo",
-        "url": "https://freewebapi.com/wp-content/uploads/2024/06/fwa2.png",
-        "contentUrl": "https://freewebapi.com/wp-content/uploads/2024/06/fwa2.png",
-        "caption": "FreeWebApi",
-        "inLanguage": "en-GB"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://freewebapi.com/#website",
-      "url": "https://freewebapi.com",
-      "name": "FreeWebApi",
-      "publisher": {
-        "@id": "https://freewebapi.com/#person"
-      },
-      "inLanguage": "en-GB"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://freewebapi.com/health-and-fitness-apis/positivity-tips-api/#webpage",
-      "url": "https://freewebapi.com/health-and-fitness-apis/positivity-tips-api/",
-      "name": "Free Positivity Tips API - FreeWebApi",
-      "datePublished": "2024-06-23T12:27:33+02:00",
-      "dateModified": "2024-06-23T12:27:33+02:00",
-      "isPartOf": {
-        "@id": "https://freewebapi.com/#website"
-      },
-      "inLanguage": "en-GB"
-    },
-    {
-      "@type": "Person",
-      "@id": "https://freewebapi.com/author/freewebapi/",
-      "name": "FreeWebApi",
-      "url": "https://freewebapi.com/author/freewebapi/",
-      "image": {
-        "@type": "ImageObject",
-        "@id": "https://secure.gravatar.com/avatar/ac44bd87d19b4e3f910c97620cd10561?s=96&d=mm&r=g",
-        "url": "https://secure.gravatar.com/avatar/ac44bd87d19b4e3f910c97620cd10561?s=96&d=mm&r=g",
-        "caption": "FreeWebApi",
-        "inLanguage": "en-GB"
-      }
-    },
-    {
-      "@type": "BlogPosting",
-      "@id": "https://freewebapi.com/health-and-fitness-apis/positivity-tips-api/#richSnippet",
-      "headline": "Free Positivity Tips API - FreeWebApi",
-      "keywords": "positivity tips api",
-      "datePublished": "2024-06-23T12:27:33+02:00",
-      "dateModified": "2024-06-23T12:27:33+02:00",
-      "articleSection": "Health and Fitness APIs",
-      "author": {
-        "@id": "https://freewebapi.com/author/freewebapi/"
-      },
-      "publisher": {
-        "@id": "https://freewebapi.com/#person"
-      },
-      "description": "Explore the Free Positivity Tips API for accurate and up-to-date data. From live updates to detailed analytics, integrate seamlessly into your projects!",
-      "name": "Free Positivity Tips API - FreeWebApi",
-      "isPartOf": {
-        "@id": "https://freewebapi.com/health-and-fitness-apis/positivity-tips-api/#webpage"
-      },
-      "inLanguage": "en-GB",
-      "mainEntityOfPage": {
-        "@id": "https://freewebapi.com/health-and-fitness-apis/positivity-tips-api/#webpage"
-      }
-    }
-  ]
+function getQuotes() {
+  fetch("https://api.quotable.oi/random")
+   .then(Response => Response.json())
+   .then(Response => {
+    console.log(data);
+    document.getElementById("quote").textContent = `"${data.content}"`;
+    document.getElementById("author").textContent = `-${data.author}`;
+   })
 }
-
+getQuotes();
 

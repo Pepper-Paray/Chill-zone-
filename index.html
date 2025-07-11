@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <script>sfc = "https://cdn.tailwindcss.com"</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
     <title>CHILL ZONE!!</title>
 </head>
 
@@ -81,6 +85,9 @@
                                     <circle cx="11" cy="11" r="10.5" class="stroke-sky-400/25" />
                                     <path d="M8 11.5L10.5 14L14 8" class="stroke-sky-800 dark:stroke-sky-300" />
                                 </svg>
+                                <blockquote id="quote" class="text-lg text-gray-800 visible block"></blockquote>
+                                <cite id="author"></cite>
+                                <button onclick="getQuote()">NewQuote</button>
                                 <p class="ml-3">Reflection and Imperfections</p>
                             </li>
                         </ul>
@@ -105,22 +112,13 @@
             <div class="relative -bottom-px col-span-full col-start-1 row-start-2 h-px bg-(--pattern-fg)"></div>
             <div class="relative -top-px col-span-full col-start-1 row-start-4 h-px bg-(--pattern-fg)"></div>
         </div>
-        <script type="application/ld+json" class="rank-math-schema">
-            <script type="application/ld+json" class="rank-math-schema">
-            { ...JSON-LD structured data... } {
-               "@context": "https://schema.org",
-                 "@type": "WebSite",
-             "name": "Example Site",
-             "url": "https://example.com"
-            }
-</script>
 
     </main>
     <footer>
 
     </footer>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="script" href="script.js">
+    <script src="script.js"></script>
 </body>
 
 </html>
